@@ -1,0 +1,159 @@
+<div class="main-navigation fixed">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <!-- navbar start -->
+                <nav class="navbar navbar-default" role="navigation">
+
+                    <!-- Toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>    
+                        
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                        
+                        
+                    {% if is_granted('ROLE_CHEF') %}    
+                        
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    
+                        <ul class="nav navbar-nav navbar-main-menu">
+                            <li class="dropdown active">
+                                <a href="index-2.html" class="dropdown-toggle" data-toggle="dropdown">Accueil</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="page-about.html" class="dropdown-toggle" data-toggle="dropdown">Profil</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="{{ path('isetk_EmploiChef') }}" class="dropdown-toggle" data-toggle="dropdown">Emploi du temps</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="{{ path('isetk_AbsenceChef') }}" class="dropdown-toggle" data-toggle="dropdown">Absences</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="{{ path('isetk_NoteChef') }}" class="dropdown-toggle" data-toggle="dropdown">Resultat Exam</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="{{ path('isetk_CompteChef') }}" class="dropdown-toggle" data-toggle="dropdown">Compte</a>
+                            </li>
+                        </ul>
+                        
+                    {% elseif is_granted('ROLE_ENSEIGNANT') %}
+                           
+                        
+                        <ul class="nav navbar-nav navbar-main-menu">
+                            <li class="dropdown active">
+                                <a href="index-2.html" class="dropdown-toggle" data-toggle="dropdown">Accueil</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="page-about.html" class="dropdown-toggle" data-toggle="dropdown">Profil</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="{{ path('isetk_EmploiEnseignant') }}" class="dropdown-toggle" data-toggle="dropdown">Emploi du temps</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="{{ path('isetk_AbsenceEnseignant') }}" class="dropdown-toggle" data-toggle="dropdown">Absence Etudiants</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="{{ path('isetk_NoteEnseignant') }}" class="dropdown-toggle" data-toggle="dropdown">Resultat Exam</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours</a>
+                            </li>
+                        </ul>
+                        
+                        
+                    {% elseif is_granted('ROLE_ETUDIANT') %}
+
+                        
+                        <ul class="nav navbar-nav navbar-main-menu">
+                            <li class="dropdown active">
+                                <a href="{{ path('isetk_homeEtudiant') }}" class="dropdown-toggle" data-toggle="dropdown">Accueil</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="page-about.html" class="dropdown-toggle" data-toggle="dropdown">Profil</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="{{ path('isetk_EmploiEtudiant') }}" class="dropdown-toggle" data-toggle="dropdown">Emploi du temps</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="{{ path('isetk_AbsenceEtudiant') }}" class="dropdown-toggle" data-toggle="dropdown">Absence</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="{{ path('isetk_ResultatEtudiant') }}" class="dropdown-toggle" data-toggle="dropdown">Resultat</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours</a>
+                            </li>
+                        </ul>    
+                            
+                            
+                        {% endif %}
+                        
+                        
+                        <ul class="nav navbar-nav navbar-right navbar-symbols">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+                                <ul class="dropdown-menu animated fadeInDownSmall">
+                                    <li>
+                                        <form role="search">
+                                            <div class="form-group search">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                                <div class="vertical-div hidden-xs"></div>
+                            </li>
+                            <li class="dropdown">
+                                
+                                {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                                    Hello ,{{ app.user.username }}{#{{ 'Hello'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}#}
+                                    <a href="{{ path('fos_user_security_logout') }}" ><i class="fa fa-lock"></i></a>
+                                    
+                                {% else %}
+                                    <a href="{{ path('fos_user_security_login') }}" ><i class="fa fa-lock"></i></a>
+                                {% endif %}
+                                    
+                                {#<ul class="dropdown-menu animated fadeInDownSmall">
+                                    <li>
+                                        <form class="login-form">
+                                            <div class="form-group name">
+                                                <input type="text" class="form-control" placeholder="username">
+                                            </div>
+                                            <div class="form-group password">
+                                                <input type="text" class="form-control" placeholder="password">
+                                            </div>
+                                            <button type="submit" class="btn btn-gray">Log In</button>
+                                            <span>or</span>
+                                            <button type="submit" class="btn btn-gray btn-default">Sing Up</button>
+                                            <ul>
+                                                <li><a href="#">Forgot your password?</a></li>
+                                            </ul>
+                                            <div class="divider"></div>
+                                            <span class="text-center">Login with</span>
+                                            <a href="#" class="btn btn-symb btn-facebook"> <i class="fa fa-facebook"></i></a>
+                                            <a href="#" class="btn btn-symb btn-twitter"> <i class="fa fa-twitter"></i></a>
+                                            <a href="#" class="btn btn-symb btn-googleplus"> <i class="fa fa-google-plus"></i></a>
+                                        </form>
+                                    </li>
+                                </ul>#}
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- navbar end -->
+
+            </div>
+        </div>
+    </div>
+</div>

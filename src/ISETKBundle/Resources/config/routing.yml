@@ -1,0 +1,77 @@
+isetk_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: ISETKBundle:Default:index }
+    
+isetk_home:
+    path:     /
+    defaults: { _controller: ISETKBundle:Default:index }
+# --------------- Chef ----------------------------
+isetk_homeChef:
+    path:     /Chef
+    defaults: { _controller: ISETKBundle:Chef:index }
+    
+isetk_EmploiChef:
+    path:     /Chef/Emploi
+    defaults: { _controller: ISETKBundle:Chef:emploi }
+    
+isetk_CompteChef:
+    path:     /Chef/Compte
+    defaults: { _controller: ISETKBundle:Chef:compte }
+    
+isetk_AbsenceChef:
+    path:     /Chef/Absence
+    defaults: { _controller: ISETKBundle:Chef:absence }
+
+isetk_doAbsenceChef:
+    path:     /Chef/Absence
+    defaults: { _controller: ISETKBundle:Chef:doAbsence }
+ 
+isetk_NoteChef:
+    path:     /Chef/Note
+    defaults: { _controller: ISETKBundle:Chef:note }
+
+isetk_doNoteChef:
+    path:     /Chef/NoteT
+    defaults: { _controller: ISETKBundle:Chef:doNote }
+
+
+# --------------- Enseignant ----------------------------    
+isetk_homeEnseignant:
+    path:     /Enseignant
+    defaults: { _controller: ISETKBundle:Enseignant:index }
+    
+isetk_EmploiEnseignant:
+    path:     /Enseignant/Emploi
+    defaults: { _controller: ISETKBundle:Enseignant:emploi }
+    
+isetk_AbsenceEnseignant:
+    path:     /Enseignant/Absence
+    defaults: { _controller: ISETKBundle:Enseignant:absence }
+
+isetk_doAbsenceEnseignant:
+    path:     /Enseignant/Absence
+    defaults: { _controller: ISETKBundle:Enseignant:doAbsence }
+ 
+isetk_NoteEnseignant:
+    path:     /Enseignant/Note
+    defaults: { _controller: ISETKBundle:Enseignant:note }
+
+isetk_doNoteEnseignant:
+    path:     /Enseignant/NoteT
+    defaults: { _controller: ISETKBundle:Enseignant:doNote }
+# --------------- Etudiant ----------------------------     
+isetk_homeEtudiant:
+    path:     /Etudiant
+    defaults: { _controller: ISETKBundle:Etudiant:index }
+    
+isetk_EmploiEtudiant:
+    path:     /Etudiant/Emploi
+    defaults: { _controller: ISETKBundle:Etudiant:emploi }
+    
+isetk_ResultatEtudiant:
+    path:     /Etudiant/Resultat
+    defaults: { _controller: ISETKBundle:Etudiant:resultat }
+    
+isetk_AbsenceEtudiant:
+    path:     /Etudiant/Absence
+    defaults: { _controller: ISETKBundle:Etudiant:absence }

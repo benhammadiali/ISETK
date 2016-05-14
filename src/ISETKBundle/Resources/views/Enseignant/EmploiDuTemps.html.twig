@@ -1,0 +1,53 @@
+{% extends "ISETKBundle:Template:Template.html.twig" %}
+
+{% block titre %}
+
+    <title>Emploi du templs</title>
+
+{% endblock %}
+
+
+
+
+{% block main %}
+
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Emploi du temps</h1>
+                    <div class="separator"></div>
+                    <p class="text-center">{{ user.prenom }} {{ user.nom }}</p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            {#<div class="icon-box">
+                                <i class="fa fa-arrows-alt object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="0"></i>
+                                <h2>Pellentesque fermentu.</h2>
+                                <p>Voluptatem ad provident non <a href="#">repudiandae</a> veritatis beatae cupiditate amet reiciendis.</p>
+                            </div>#}
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="icon-box">
+                                <i class="fa fa-cloud-download object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200"></i>
+                                <h2>Download</h2>
+                                <p>Emploi du temps pour la 1er semestre 2016.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            {#<div class="icon-box">
+                                <i class="fa fa-sitemap object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="400"></i>
+                                <h2>Pellentesque fermentu.</h2>
+                                <p>Inventore dolores aut laboriosam cum consequuntur delectus sequi! Eum est.</p>
+                            </div>#}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}

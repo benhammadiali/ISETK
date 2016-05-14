@@ -1,0 +1,95 @@
+{% extends "ISETKBundle:Template:Template.html.twig" %}
+
+{% block titre %}
+
+    <title>Note</title>
+
+{% endblock %}
+
+
+
+
+{% block main %}
+
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Note</h1>
+                    <div class="separator"></div>
+                    <p class="text-center">{{ user.prenom }} {{ user.nom }}</p>
+                    <p class="text-center"></p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            {#<div class="icon-box">
+                                <i class="fa fa-cloud-upload object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="0"></i>
+                                <h2>Upload Enseignant</h2>
+                                <p>Version actuelle : Emploi du temps pour la 1er semestre 2016.</p>
+                            </div>#}
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="icon-box">
+                                <form action="{{ path('isetk_NoteChef') }}">
+                                    <select id="cla" name="cla">
+                                        {% for c in classes %}
+                                            <option value="{{ c.id }}">{{ c.niveau }} {{ c.filiere }} {{ c.classes }}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <input type="submit" value="Submit">
+                                </form>
+
+
+                                </br></br>
+
+                                {% if etudiants != null %}
+                                    
+                                    <table class="table table-hover">
+                                        <TR> 
+                                            <TH> Etudiant </TH> 
+                                            <TH> TP </TH> 
+                                            <TH> DS </TH>
+                                            <TH> Exam </TH>
+                                            <TH> Valider </TH>
+
+                                        </TR> 
+
+                                        {% for e in etudiants %}
+                                            <form action="{{ path('isetk_doNoteChef') }}">
+                                            <TR> 
+                                                <TD> {{ e.prenom }} {{ e.nom }} </TD> 
+                                                <TD> <input type="text" id="tp" name="tp" value="" > </TD>
+                                                <TD> <input type="text" id="ds" name="ds" value=""> </TD>
+                                                <TD> <input type="text" id="exam" name="exam" value=""> </TD>
+                                                <TD> 
+                                                    <input type="text" id="cl" name="cl" value="{{ e.id }}" style="width: 0px;">    
+                                                    <input type="submit" value="valider">
+                                                    
+                                                </TD> 
+                                            </TR> 
+                                            </form>
+                                        {% endfor %}
+
+                                    </table>
+
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            {# <div class="icon-box">
+                                 <i class="fa fa-cloud-upload object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="400"></i>
+                                 <h2>Upload Etudiant</h2>
+                                 <p>Version actuelle : Emploi du temps pour la 1er semestre 2016.</p>
+                             </div>#}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}
+
