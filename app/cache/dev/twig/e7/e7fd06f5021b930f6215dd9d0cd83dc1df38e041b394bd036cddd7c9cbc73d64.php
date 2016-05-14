@@ -10,6 +10,7 @@ class __TwigTemplate_e7d6564585f22de240bf055f32eaaddb472f54e31222cb9e464c272c4d5
         // line 1
         $this->parent = $this->loadTemplate("ISETKBundle:Template:Template.html.twig", "ISETKBundle:Enseignant:Home.html.twig", 1);
         $this->blocks = array(
+            'banner' => array($this, 'block_banner'),
         );
     }
 
@@ -21,6 +22,16 @@ class __TwigTemplate_e7d6564585f22de240bf055f32eaaddb472f54e31222cb9e464c272c4d5
     protected function doDisplay(array $context, array $blocks = array())
     {
         $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 3
+    public function block_banner($context, array $blocks = array())
+    {
+        // line 4
+        echo "    ";
+        echo $this->env->getExtension('http_kernel')->renderFragment($this->env->getExtension('http_kernel')->controller("ISETKBundle:Default:banner"));
+        echo "
+";
     }
 
     public function getTemplateName()
@@ -35,8 +46,11 @@ class __TwigTemplate_e7d6564585f22de240bf055f32eaaddb472f54e31222cb9e464c272c4d5
 
     public function getDebugInfo()
     {
-        return array (  11 => 1,);
+        return array (  31 => 4,  28 => 3,  11 => 1,);
     }
 }
 /* {% extends "ISETKBundle:Template:Template.html.twig" %}*/
 /* */
+/* {% block banner %}*/
+/*     {{ render(controller("ISETKBundle:Default:banner")) }}*/
+/* {% endblock %}*/

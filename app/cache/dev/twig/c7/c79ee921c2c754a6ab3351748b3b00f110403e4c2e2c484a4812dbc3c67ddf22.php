@@ -28,16 +28,16 @@ class __TwigTemplate_fe06a025f077324af762d98802a97fadc7dd95c0c12d1481f42bc618b2d
                 <!-- first slide start -->
                 <li style=\"background-image:url('";
         // line 11
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/slider-1-slide-1.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/slide-1.png"), "html", null, true);
         echo "');\">
                     <div class=\"container\">
                         <div class=\"row\">
                             <div class=\"col-md-12\">
                                 <div class=\"caption-wrapper\">
                                     <div class=\"caption caption-non-visible\" data-caption-effect=\"fadeInDownSmall\">
-                                        <h1>iVega Premium Template</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, consequuntur, laborum, non cum odit.</p>
-                                        <a href=\"portfolio-item.html\" class=\"btn btn-default btn-lg\"> Let's start</a>
+                                        <h1>ISET Kasserine </h1>
+                                        <p>Elle a été crée en vertu de la loi numéro 1396/2004 du 22 juin 2004.Il est un établissement public à caractère scientifique et technologique doté de la personnalité civile et de l''autonomie financière.</p>
+                                        <a href=\"#\" class=\"btn btn-default btn-lg\"> Let's start</a>
                                     </div>
                                 </div>
                             </div>
@@ -49,16 +49,16 @@ class __TwigTemplate_fe06a025f077324af762d98802a97fadc7dd95c0c12d1481f42bc618b2d
                 <!-- second slide start -->
                 <li style=\"background-image:url('";
         // line 29
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/slider-1-slide-2.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/slide-2.jpg"), "html", null, true);
         echo "');\">
                     <div class=\"container\">
                         <div class=\"row\">
                             <div class=\"col-md-12\">
                                 <div class=\"caption-wrapper\">
                                     <div class=\"caption caption-non-visible\" data-caption-effect=\"fadeInDownSmall\">
-                                        <h1>Very Flexible</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                        <a href=\"portfolio-item.html\" class=\"btn btn-default btn-lg\"> Let's start</a>
+                                        <h1>Technologies de l'Informatique</h1>
+                                        <p>Assurer un Enseignement Supérieur dans les Sciences Informatiques qui dure 5 semestres pour l'ancien régime (TS) et 6 semestres pour le nouveau régime (LMD).</p>
+                                        <a href=\"#\" class=\"btn btn-default btn-lg\"> Let's start</a>
                                     </div>
                                 </div>
                             </div>
@@ -70,16 +70,16 @@ class __TwigTemplate_fe06a025f077324af762d98802a97fadc7dd95c0c12d1481f42bc618b2d
                 <!-- third slide start -->
                 <li style=\"background-image:url('";
         // line 47
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/slider-1-slide-3.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/slide-3.jpg"), "html", null, true);
         echo "');\">
                     <div class=\"container\">
                         <div class=\"row\">
                             <div class=\"col-md-12\">
                                 <div class=\"caption-wrapper\">
                                     <div class=\"caption caption-non-visible\" data-caption-effect=\"fadeInDownSmall\">
-                                        <h1>Need more?</h1>
-                                        <p>Lorem consectetur adipisicing elit.</p>
-                                        <a href=\"portfolio-item.html\" class=\"btn btn-default btn-lg\"> Let's start</a>
+                                        <h1>Sciences Economiques et de Gestion</h1>
+                                        <p>Assurer un Enseignement Supérieur dans les Sciences Economiques et de Gestion qui dure 5 semestres pour l'ancien régime (TS) et 6 semestres pour le nouveau régime (LMD).</p>
+                                        <a href=\"#\" class=\"btn btn-default btn-lg\"> Let's start</a>
                                     </div>
                                 </div>
                             </div>
@@ -124,15 +124,15 @@ class __TwigTemplate_fe06a025f077324af762d98802a97fadc7dd95c0c12d1481f42bc618b2d
 /*             <ul class="slides">*/
 /* */
 /*                 <!-- first slide start -->*/
-/*                 <li style="background-image:url('{{asset('images/slider-1-slide-1.jpg')}}');">*/
+/*                 <li style="background-image:url('{{asset('images/slide-1.png')}}');">*/
 /*                     <div class="container">*/
 /*                         <div class="row">*/
 /*                             <div class="col-md-12">*/
 /*                                 <div class="caption-wrapper">*/
 /*                                     <div class="caption caption-non-visible" data-caption-effect="fadeInDownSmall">*/
-/*                                         <h1>iVega Premium Template</h1>*/
-/*                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, consequuntur, laborum, non cum odit.</p>*/
-/*                                         <a href="portfolio-item.html" class="btn btn-default btn-lg"> Let's start</a>*/
+/*                                         <h1>ISET Kasserine </h1>*/
+/*                                         <p>Elle a été crée en vertu de la loi numéro 1396/2004 du 22 juin 2004.Il est un établissement public à caractère scientifique et technologique doté de la personnalité civile et de l''autonomie financière.</p>*/
+/*                                         <a href="#" class="btn btn-default btn-lg"> Let's start</a>*/
 /*                                     </div>*/
 /*                                 </div>*/
 /*                             </div>*/
@@ -142,15 +142,15 @@ class __TwigTemplate_fe06a025f077324af762d98802a97fadc7dd95c0c12d1481f42bc618b2d
 /*                 <!-- first slide end -->*/
 /* */
 /*                 <!-- second slide start -->*/
-/*                 <li style="background-image:url('{{asset('images/slider-1-slide-2.jpg')}}');">*/
+/*                 <li style="background-image:url('{{asset('images/slide-2.jpg')}}');">*/
 /*                     <div class="container">*/
 /*                         <div class="row">*/
 /*                             <div class="col-md-12">*/
 /*                                 <div class="caption-wrapper">*/
 /*                                     <div class="caption caption-non-visible" data-caption-effect="fadeInDownSmall">*/
-/*                                         <h1>Very Flexible</h1>*/
-/*                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>*/
-/*                                         <a href="portfolio-item.html" class="btn btn-default btn-lg"> Let's start</a>*/
+/*                                         <h1>Technologies de l'Informatique</h1>*/
+/*                                         <p>Assurer un Enseignement Supérieur dans les Sciences Informatiques qui dure 5 semestres pour l'ancien régime (TS) et 6 semestres pour le nouveau régime (LMD).</p>*/
+/*                                         <a href="#" class="btn btn-default btn-lg"> Let's start</a>*/
 /*                                     </div>*/
 /*                                 </div>*/
 /*                             </div>*/
@@ -160,15 +160,15 @@ class __TwigTemplate_fe06a025f077324af762d98802a97fadc7dd95c0c12d1481f42bc618b2d
 /*                 <!-- second slide end -->*/
 /* */
 /*                 <!-- third slide start -->*/
-/*                 <li style="background-image:url('{{asset('images/slider-1-slide-3.jpg')}}');">*/
+/*                 <li style="background-image:url('{{asset('images/slide-3.jpg')}}');">*/
 /*                     <div class="container">*/
 /*                         <div class="row">*/
 /*                             <div class="col-md-12">*/
 /*                                 <div class="caption-wrapper">*/
 /*                                     <div class="caption caption-non-visible" data-caption-effect="fadeInDownSmall">*/
-/*                                         <h1>Need more?</h1>*/
-/*                                         <p>Lorem consectetur adipisicing elit.</p>*/
-/*                                         <a href="portfolio-item.html" class="btn btn-default btn-lg"> Let's start</a>*/
+/*                                         <h1>Sciences Economiques et de Gestion</h1>*/
+/*                                         <p>Assurer un Enseignement Supérieur dans les Sciences Economiques et de Gestion qui dure 5 semestres pour l'ancien régime (TS) et 6 semestres pour le nouveau régime (LMD).</p>*/
+/*                                         <a href="#" class="btn btn-default btn-lg"> Let's start</a>*/
 /*                                     </div>*/
 /*                                 </div>*/
 /*                             </div>*/

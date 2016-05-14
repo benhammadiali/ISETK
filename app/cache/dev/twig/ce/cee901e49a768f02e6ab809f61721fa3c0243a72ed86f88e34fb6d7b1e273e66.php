@@ -26,13 +26,13 @@ class __TwigTemplate_3ea45ae28aaad4c8f89d90daa4c3bd32766290cba5e0480e8ef479eba69
                     <div class=\"footer-content\">
                         <div class=\"logo-footer\"><img id=\"logo-footer\" src=\"";
         // line 9
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/logo_blue_footer.png"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/logo1.png"), "html", null, true);
         echo "\" alt=\"\"></div>
-                        <p>Lorem ipsum dolor sit amet, consect tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven. Lorem ipsum dolor sit amet elit.</p>
+                        <p>L''Institut Supérieur des Etudes Technologiques de Kasserine a été crée en vertu de la loi numéro 1396/2004 du 22 juin 2004.Il est un établissement public à caractère scientifique et technologique doté de la personnalité civile et de l''autonomie financière.</p>
                         <ul class=\"info\">
-                            <li><i class=\"fa fa-map-marker\"></i> One infinity loop, 54100</li>
-                            <li><i class=\"fa fa-phone\"></i> +00 1234567890 &amp; +00 1234567891 </li>
-                            <li><i class=\"fa fa-envelope-o\"></i> info@ivega.com</li>
+                            <li><i class=\"fa fa-map-marker\"></i> Campus Universitaire Kasserine, BP 448, 1200 Kasserine</li>
+                            <li><i class=\"fa fa-phone\"></i> +216 77 418 000 &amp; +216 77 418 033 </li>
+                            <li><i class=\"fa fa-envelope-o\"></i> isetk@gmail.com</li>
                         </ul>
                     </div>
                 </div>
@@ -42,11 +42,11 @@ class __TwigTemplate_3ea45ae28aaad4c8f89d90daa4c3bd32766290cba5e0480e8ef479eba69
                         <ul class=\"tweets\">
                             <li>
                                 <i class=\"fa fa-twitter\"></i>
-                                <p><a href=\"#\">@lorem</a> ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, aliquid, et molestias nesciunt <a href=\"#\">http://t.co/dzLEYGeEH9</a>.</p><span>16 hours ago</span>
+                                <p><a href=\"#\">@isetk</a> my first tweet <a href=\"#\">http://t.co/dzLEYGeEH9</a>.</p><span>16 hours ago</span>
                             </li>
                             <li>
                                 <i class=\"fa fa-twitter\"></i>
-                                <p><a href=\"#\">@lorem</a> ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, aliquid, et molestias nesciunt <a href=\"#\">http://t.co/dzLEYGeEH9</a>.</p><span>16 hours ago</span>
+                                <p><a href=\"#\">@isetk</a> date PFE 2016 <a href=\"#\">http://t.co/dzLEYGeEH9</a>.</p><span>16 hours ago</span>
                             </li>
                         </ul>
                     </div>
@@ -56,82 +56,82 @@ class __TwigTemplate_3ea45ae28aaad4c8f89d90daa4c3bd32766290cba5e0480e8ef479eba69
                         <h2>Latest Projects</h2>
                         <div class=\"gallery row\">
                             <div class=\"gallery-item col-xs-4\">
-                                <a href=\"portfolio-item.html\" class=\"mask-wrapper\">
+                                <a href=\"#\" class=\"mask-wrapper\">
                                     <img src=\"";
         // line 39
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/gallery-1.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/1.jpg"), "html", null, true);
         echo "\" alt=\"\">
                                     <span class=\"mask\"><span class=\"small triangle\"><i class=\"fa fa-link\"></i></span></span>
                                 </a>
                             </div>
                             <div class=\"gallery-item col-xs-4\">
-                                <a href=\"portfolio-item.html\" class=\"mask-wrapper\">
+                                <a href=\"#\" class=\"mask-wrapper\">
                                     <img src=\"";
         // line 45
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/gallery-2.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/2.jpg"), "html", null, true);
         echo "\" alt=\"\">
                                     <span class=\"mask\"><span class=\"small triangle\"><i class=\"fa fa-link\"></i></span></span>
                                 </a>
                             </div>
                             <div class=\"gallery-item col-xs-4\">
-                                <a href=\"portfolio-item.html\" class=\"mask-wrapper\">
+                                <a href=\"#\" class=\"mask-wrapper\">
                                     <img src=\"";
         // line 51
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/gallery-3.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/3.jpg"), "html", null, true);
         echo "\" alt=\"\">
                                     <span class=\"mask\"><span class=\"small triangle\"><i class=\"fa fa-link\"></i></span></span>
                                 </a>
                             </div>
                             <div class=\"gallery-item col-xs-4\">
-                                <a href=\"portfolio-item.html\" class=\"mask-wrapper\">
+                                <a href=\"#\" class=\"mask-wrapper\">
                                     <img src=\"";
         // line 57
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/gallery-4.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/4.jpg"), "html", null, true);
         echo "\" alt=\"\">
                                     <span class=\"mask\"><span class=\"small triangle\"><i class=\"fa fa-link\"></i></span></span>
                                 </a>
                             </div>
                             <div class=\"gallery-item col-xs-4\">
-                                <a href=\"portfolio-item.html\" class=\"mask-wrapper\">
+                                <a href=\"#\" class=\"mask-wrapper\">
                                     <img src=\"";
         // line 63
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/gallery-5.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/5.jpg"), "html", null, true);
         echo "\" alt=\"\">
                                     <span class=\"mask\"><span class=\"small triangle\"><i class=\"fa fa-link\"></i></span></span>
                                 </a>
                             </div>
                             <div class=\"gallery-item col-xs-4\">
-                                <a href=\"portfolio-item.html\" class=\"mask-wrapper\">
+                                <a href=\"#\" class=\"mask-wrapper\">
                                     <img src=\"";
         // line 69
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/gallery-6.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/6.jpg"), "html", null, true);
         echo "\" alt=\"\">
                                     <span class=\"mask\"><span class=\"small triangle\"><i class=\"fa fa-link\"></i></span></span>
                                 </a>
                             </div>
                             <div class=\"gallery-item col-xs-4\">
-                                <a href=\"portfolio-item.html\" class=\"mask-wrapper\">
+                                <a href=\"#\" class=\"mask-wrapper\">
                                     <img src=\"";
         // line 75
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/gallery-7.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/7.jpg"), "html", null, true);
         echo "\" alt=\"\">
                                     <span class=\"mask\"><span class=\"small triangle\"><i class=\"fa fa-link\"></i></span></span>
                                 </a>
                             </div>
                             <div class=\"gallery-item col-xs-4\">
-                                <a href=\"portfolio-item.html\" class=\"mask-wrapper\">
+                                <a href=\"#\" class=\"mask-wrapper\">
                                     <img src=\"";
         // line 81
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/gallery-8.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/8.jpg"), "html", null, true);
         echo "\" alt=\"\">
                                     <span class=\"mask\"><span class=\"small triangle\"><i class=\"fa fa-link\"></i></span></span>
                                 </a>
                             </div>
                             <div class=\"gallery-item col-xs-4\">
-                                <a href=\"portfolio-item.html\" class=\"mask-wrapper\">
+                                <a href=\"#\" class=\"mask-wrapper\">
                                     <img src=\"";
         // line 87
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/gallery-9.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("images/9.jpg"), "html", null, true);
         echo "\" alt=\"\">
                                     <span class=\"mask\"><span class=\"small triangle\"><i class=\"fa fa-link\"></i></span></span>
                                 </a>
@@ -149,7 +149,7 @@ class __TwigTemplate_3ea45ae28aaad4c8f89d90daa4c3bd32766290cba5e0480e8ef479eba69
         <div class=\"container\">
             <div class=\"row\">
                 <div class=\"col-md-4\">
-                    <p>Copyright © 2014 iVega. All Rights Reserved</p>
+                    <p>Copyright © 2016 ISETK. All Rights Reserved</p>
                 </div>
                 <div class=\"col-md-8\">
                     <nav class=\"navbar navbar-default\" role=\"navigation\">
@@ -162,15 +162,7 @@ class __TwigTemplate_3ea45ae28aaad4c8f89d90daa4c3bd32766290cba5e0480e8ef479eba69
                                 <span class=\"icon-bar\"></span>
                             </button>
                         </div>   
-                        <div class=\"collapse navbar-collapse\" id=\"navbar-collapse-2\">
-                            <ul class=\"nav navbar-nav\">
-                                <li><a href=\"index-2.html\">Home</a></li>
-                                <li><a href=\"page-about.html\">About</a></li>
-                                <li><a href=\"blog.html\">Blog</a></li>
-                                <li><a href=\"portfolio-full.html\">Portfolio</a></li>
-                                <li><a href=\"page-contact.html\">Contact</a></li>
-                            </ul>
-                        </div>
+                       
                     </nav>
                 </div>
             </div>
@@ -205,12 +197,12 @@ class __TwigTemplate_3ea45ae28aaad4c8f89d90daa4c3bd32766290cba5e0480e8ef479eba69
 /*             <div class="row">*/
 /*                 <div class="col-sm-4">*/
 /*                     <div class="footer-content">*/
-/*                         <div class="logo-footer"><img id="logo-footer" src="{{asset('images/logo_blue_footer.png')}}" alt=""></div>*/
-/*                         <p>Lorem ipsum dolor sit amet, consect tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven. Lorem ipsum dolor sit amet elit.</p>*/
+/*                         <div class="logo-footer"><img id="logo-footer" src="{{asset('images/logo1.png')}}" alt=""></div>*/
+/*                         <p>L''Institut Supérieur des Etudes Technologiques de Kasserine a été crée en vertu de la loi numéro 1396/2004 du 22 juin 2004.Il est un établissement public à caractère scientifique et technologique doté de la personnalité civile et de l''autonomie financière.</p>*/
 /*                         <ul class="info">*/
-/*                             <li><i class="fa fa-map-marker"></i> One infinity loop, 54100</li>*/
-/*                             <li><i class="fa fa-phone"></i> +00 1234567890 &amp; +00 1234567891 </li>*/
-/*                             <li><i class="fa fa-envelope-o"></i> info@ivega.com</li>*/
+/*                             <li><i class="fa fa-map-marker"></i> Campus Universitaire Kasserine, BP 448, 1200 Kasserine</li>*/
+/*                             <li><i class="fa fa-phone"></i> +216 77 418 000 &amp; +216 77 418 033 </li>*/
+/*                             <li><i class="fa fa-envelope-o"></i> isetk@gmail.com</li>*/
 /*                         </ul>*/
 /*                     </div>*/
 /*                 </div>*/
@@ -220,11 +212,11 @@ class __TwigTemplate_3ea45ae28aaad4c8f89d90daa4c3bd32766290cba5e0480e8ef479eba69
 /*                         <ul class="tweets">*/
 /*                             <li>*/
 /*                                 <i class="fa fa-twitter"></i>*/
-/*                                 <p><a href="#">@lorem</a> ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, aliquid, et molestias nesciunt <a href="#">http://t.co/dzLEYGeEH9</a>.</p><span>16 hours ago</span>*/
+/*                                 <p><a href="#">@isetk</a> my first tweet <a href="#">http://t.co/dzLEYGeEH9</a>.</p><span>16 hours ago</span>*/
 /*                             </li>*/
 /*                             <li>*/
 /*                                 <i class="fa fa-twitter"></i>*/
-/*                                 <p><a href="#">@lorem</a> ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, aliquid, et molestias nesciunt <a href="#">http://t.co/dzLEYGeEH9</a>.</p><span>16 hours ago</span>*/
+/*                                 <p><a href="#">@isetk</a> date PFE 2016 <a href="#">http://t.co/dzLEYGeEH9</a>.</p><span>16 hours ago</span>*/
 /*                             </li>*/
 /*                         </ul>*/
 /*                     </div>*/
@@ -234,56 +226,56 @@ class __TwigTemplate_3ea45ae28aaad4c8f89d90daa4c3bd32766290cba5e0480e8ef479eba69
 /*                         <h2>Latest Projects</h2>*/
 /*                         <div class="gallery row">*/
 /*                             <div class="gallery-item col-xs-4">*/
-/*                                 <a href="portfolio-item.html" class="mask-wrapper">*/
-/*                                     <img src="{{asset('images/gallery-1.jpg')}}" alt="">*/
+/*                                 <a href="#" class="mask-wrapper">*/
+/*                                     <img src="{{asset('images/1.jpg')}}" alt="">*/
 /*                                     <span class="mask"><span class="small triangle"><i class="fa fa-link"></i></span></span>*/
 /*                                 </a>*/
 /*                             </div>*/
 /*                             <div class="gallery-item col-xs-4">*/
-/*                                 <a href="portfolio-item.html" class="mask-wrapper">*/
-/*                                     <img src="{{asset('images/gallery-2.jpg')}}" alt="">*/
+/*                                 <a href="#" class="mask-wrapper">*/
+/*                                     <img src="{{asset('images/2.jpg')}}" alt="">*/
 /*                                     <span class="mask"><span class="small triangle"><i class="fa fa-link"></i></span></span>*/
 /*                                 </a>*/
 /*                             </div>*/
 /*                             <div class="gallery-item col-xs-4">*/
-/*                                 <a href="portfolio-item.html" class="mask-wrapper">*/
-/*                                     <img src="{{asset('images/gallery-3.jpg')}}" alt="">*/
+/*                                 <a href="#" class="mask-wrapper">*/
+/*                                     <img src="{{asset('images/3.jpg')}}" alt="">*/
 /*                                     <span class="mask"><span class="small triangle"><i class="fa fa-link"></i></span></span>*/
 /*                                 </a>*/
 /*                             </div>*/
 /*                             <div class="gallery-item col-xs-4">*/
-/*                                 <a href="portfolio-item.html" class="mask-wrapper">*/
-/*                                     <img src="{{asset('images/gallery-4.jpg')}}" alt="">*/
+/*                                 <a href="#" class="mask-wrapper">*/
+/*                                     <img src="{{asset('images/4.jpg')}}" alt="">*/
 /*                                     <span class="mask"><span class="small triangle"><i class="fa fa-link"></i></span></span>*/
 /*                                 </a>*/
 /*                             </div>*/
 /*                             <div class="gallery-item col-xs-4">*/
-/*                                 <a href="portfolio-item.html" class="mask-wrapper">*/
-/*                                     <img src="{{asset('images/gallery-5.jpg')}}" alt="">*/
+/*                                 <a href="#" class="mask-wrapper">*/
+/*                                     <img src="{{asset('images/5.jpg')}}" alt="">*/
 /*                                     <span class="mask"><span class="small triangle"><i class="fa fa-link"></i></span></span>*/
 /*                                 </a>*/
 /*                             </div>*/
 /*                             <div class="gallery-item col-xs-4">*/
-/*                                 <a href="portfolio-item.html" class="mask-wrapper">*/
-/*                                     <img src="{{asset('images/gallery-6.jpg')}}" alt="">*/
+/*                                 <a href="#" class="mask-wrapper">*/
+/*                                     <img src="{{asset('images/6.jpg')}}" alt="">*/
 /*                                     <span class="mask"><span class="small triangle"><i class="fa fa-link"></i></span></span>*/
 /*                                 </a>*/
 /*                             </div>*/
 /*                             <div class="gallery-item col-xs-4">*/
-/*                                 <a href="portfolio-item.html" class="mask-wrapper">*/
-/*                                     <img src="{{asset('images/gallery-7.jpg')}}" alt="">*/
+/*                                 <a href="#" class="mask-wrapper">*/
+/*                                     <img src="{{asset('images/7.jpg')}}" alt="">*/
 /*                                     <span class="mask"><span class="small triangle"><i class="fa fa-link"></i></span></span>*/
 /*                                 </a>*/
 /*                             </div>*/
 /*                             <div class="gallery-item col-xs-4">*/
-/*                                 <a href="portfolio-item.html" class="mask-wrapper">*/
-/*                                     <img src="{{asset('images/gallery-8.jpg')}}" alt="">*/
+/*                                 <a href="#" class="mask-wrapper">*/
+/*                                     <img src="{{asset('images/8.jpg')}}" alt="">*/
 /*                                     <span class="mask"><span class="small triangle"><i class="fa fa-link"></i></span></span>*/
 /*                                 </a>*/
 /*                             </div>*/
 /*                             <div class="gallery-item col-xs-4">*/
-/*                                 <a href="portfolio-item.html" class="mask-wrapper">*/
-/*                                     <img src="{{asset('images/gallery-9.jpg')}}" alt="">*/
+/*                                 <a href="#" class="mask-wrapper">*/
+/*                                     <img src="{{asset('images/9.jpg')}}" alt="">*/
 /*                                     <span class="mask"><span class="small triangle"><i class="fa fa-link"></i></span></span>*/
 /*                                 </a>*/
 /*                             </div>*/
@@ -300,7 +292,7 @@ class __TwigTemplate_3ea45ae28aaad4c8f89d90daa4c3bd32766290cba5e0480e8ef479eba69
 /*         <div class="container">*/
 /*             <div class="row">*/
 /*                 <div class="col-md-4">*/
-/*                     <p>Copyright © 2014 iVega. All Rights Reserved</p>*/
+/*                     <p>Copyright © 2016 ISETK. All Rights Reserved</p>*/
 /*                 </div>*/
 /*                 <div class="col-md-8">*/
 /*                     <nav class="navbar navbar-default" role="navigation">*/
@@ -313,15 +305,7 @@ class __TwigTemplate_3ea45ae28aaad4c8f89d90daa4c3bd32766290cba5e0480e8ef479eba69
 /*                                 <span class="icon-bar"></span>*/
 /*                             </button>*/
 /*                         </div>   */
-/*                         <div class="collapse navbar-collapse" id="navbar-collapse-2">*/
-/*                             <ul class="nav navbar-nav">*/
-/*                                 <li><a href="index-2.html">Home</a></li>*/
-/*                                 <li><a href="page-about.html">About</a></li>*/
-/*                                 <li><a href="blog.html">Blog</a></li>*/
-/*                                 <li><a href="portfolio-full.html">Portfolio</a></li>*/
-/*                                 <li><a href="page-contact.html">Contact</a></li>*/
-/*                             </ul>*/
-/*                         </div>*/
+/*                        */
 /*                     </nav>*/
 /*                 </div>*/
 /*             </div>*/

@@ -87,7 +87,10 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
                         
                         <ul class=\"nav navbar-nav navbar-main-menu\">
                             <li class=\"dropdown active\">
-                                <a href=\"index-2.html\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Accueil</a>
+                                <a href=\"";
+            // line 55
+            echo $this->env->getExtension('routing')->getPath("isetk_homeEnseignant");
+            echo "\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Accueil</a>
                             </li>
                             <li class=\"dropdown\">
                                 <a href=\"page-about.html\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Profil</a>
@@ -224,7 +227,7 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
 
     public function getDebugInfo()
     {
-        return array (  202 => 150,  199 => 126,  193 => 124,  186 => 121,  183 => 120,  181 => 119,  161 => 101,  149 => 92,  143 => 89,  137 => 86,  128 => 80,  122 => 76,  110 => 67,  104 => 64,  98 => 61,  86 => 51,  78 => 46,  69 => 40,  63 => 37,  57 => 34,  42 => 22,  19 => 1,);
+        return array (  205 => 150,  202 => 126,  196 => 124,  189 => 121,  186 => 120,  184 => 119,  164 => 101,  152 => 92,  146 => 89,  140 => 86,  131 => 80,  125 => 76,  113 => 67,  107 => 64,  101 => 61,  92 => 55,  86 => 51,  78 => 46,  69 => 40,  63 => 37,  57 => 34,  42 => 22,  19 => 1,);
     }
 }
 /* <div class="main-navigation fixed">*/
@@ -281,7 +284,7 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
 /*                         */
 /*                         <ul class="nav navbar-nav navbar-main-menu">*/
 /*                             <li class="dropdown active">*/
-/*                                 <a href="index-2.html" class="dropdown-toggle" data-toggle="dropdown">Accueil</a>*/
+/*                                 <a href="{{ path('isetk_homeEnseignant') }}" class="dropdown-toggle" data-toggle="dropdown">Accueil</a>*/
 /*                             </li>*/
 /*                             <li class="dropdown">*/
 /*                                 <a href="page-about.html" class="dropdown-toggle" data-toggle="dropdown">Profil</a>*/
