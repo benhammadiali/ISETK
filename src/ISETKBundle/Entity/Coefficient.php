@@ -3,6 +3,7 @@
 namespace ISETKBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Coefficient
@@ -29,8 +30,8 @@ class Coefficient
     private $coef;
     
     /**
-    * @ORM\ManyToMany(targetEntity="Matiere", cascade={"persist"})
-    */
+     * @ORM\ManyToMany(targetEntity="Matiere", cascade={"persist"})
+     */
    private $Matiere;
 
 
@@ -73,6 +74,9 @@ class Coefficient
 
     function setMatiere($Matiere) {
         $this->Matiere = $Matiere;
+    }
+    public function __construct() {
+        $this->Matiere = new ArrayCollection();
     }
 
 

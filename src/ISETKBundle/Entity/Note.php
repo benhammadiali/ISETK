@@ -24,7 +24,7 @@ class Note
     /**
      * @var float
      *
-     * @ORM\Column(name="TP", type="float")
+     * @ORM\Column(name="TP", type="float", nullable=true)
      */
     private $tP;
 

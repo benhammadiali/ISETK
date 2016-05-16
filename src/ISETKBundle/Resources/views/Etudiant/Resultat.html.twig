@@ -39,12 +39,18 @@
                                         <TH> NOTE DS </TH>
                                         <TH> NOTE EXAM </TH>
                                     </TR> 
-                                    
+                                                                  
                                     {% for n in notes %}
                                     <TR> 
                                         <TD> {{ n.Eseignant.Matiere.nom }} </TD> 
                                         <TD> {{ n.Eseignant.prenom }} {{ n.Eseignant.nom }} </TD> 
-                                        <TD> 5 </TD> 
+                                        {% for m in n.Eseignant.Matiere.Coefficient %}
+                                        {% for c in Coef %}
+                                            {% if c.id == m.id %}
+                                                <TD> {{ c.coef }} </TD>
+                                            {% endif %}
+                                        {% endfor %}
+                                        {% endfor %}
                                         <TD> {{ n.TP }} </TD> 
                                         <TD> {{ n.DS }} </TD> 
                                         <TD> {{ n.Exam }} </TD> 

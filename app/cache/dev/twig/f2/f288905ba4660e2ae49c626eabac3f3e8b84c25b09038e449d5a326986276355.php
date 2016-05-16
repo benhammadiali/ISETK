@@ -74,7 +74,7 @@ class __TwigTemplate_ed69a9b01308a6ed64607241502dc580929b6a9c222349a225503e497ac
                                         <TH> NOTE DS </TH>
                                         <TH> NOTE EXAM </TH>
                                     </TR> 
-                                    
+                                                                  
                                     ";
         // line 43
         $context['_parent'] = $context;
@@ -92,17 +92,47 @@ class __TwigTemplate_ed69a9b01308a6ed64607241502dc580929b6a9c222349a225503e497ac
             echo " ";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute($context["n"], "Eseignant", array()), "nom", array()), "html", null, true);
             echo " </TD> 
-                                        <TD> 5 </TD> 
-                                        <TD> ";
-            // line 48
+                                        ";
+            // line 47
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($this->getAttribute($context["n"], "Eseignant", array()), "Matiere", array()), "Coefficient", array()));
+            foreach ($context['_seq'] as $context["_key"] => $context["m"]) {
+                // line 48
+                echo "                                        ";
+                $context['_parent'] = $context;
+                $context['_seq'] = twig_ensure_traversable((isset($context["Coef"]) ? $context["Coef"] : $this->getContext($context, "Coef")));
+                foreach ($context['_seq'] as $context["_key"] => $context["c"]) {
+                    // line 49
+                    echo "                                            ";
+                    if (($this->getAttribute($context["c"], "id", array()) == $this->getAttribute($context["m"], "id", array()))) {
+                        // line 50
+                        echo "                                                <TD> ";
+                        echo twig_escape_filter($this->env, $this->getAttribute($context["c"], "coef", array()), "html", null, true);
+                        echo " </TD>
+                                            ";
+                    }
+                    // line 52
+                    echo "                                        ";
+                }
+                $_parent = $context['_parent'];
+                unset($context['_seq'], $context['_iterated'], $context['_key'], $context['c'], $context['_parent'], $context['loop']);
+                $context = array_intersect_key($context, $_parent) + $_parent;
+                // line 53
+                echo "                                        ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['m'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 54
+            echo "                                        <TD> ";
             echo twig_escape_filter($this->env, $this->getAttribute($context["n"], "TP", array()), "html", null, true);
             echo " </TD> 
                                         <TD> ";
-            // line 49
+            // line 55
             echo twig_escape_filter($this->env, $this->getAttribute($context["n"], "DS", array()), "html", null, true);
             echo " </TD> 
                                         <TD> ";
-            // line 50
+            // line 56
             echo twig_escape_filter($this->env, $this->getAttribute($context["n"], "Exam", array()), "html", null, true);
             echo " </TD> 
                                     </TR> 
@@ -111,14 +141,14 @@ class __TwigTemplate_ed69a9b01308a6ed64607241502dc580929b6a9c222349a225503e497ac
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['n'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 53
+        // line 59
         echo "                                    
                                 </table>
                             </div>
 ";
-        // line 57
+        // line 63
         echo "                        ";
-        // line 64
+        // line 70
         echo "                    </div>
                 </div>
             </div>
@@ -143,7 +173,7 @@ class __TwigTemplate_ed69a9b01308a6ed64607241502dc580929b6a9c222349a225503e497ac
 
     public function getDebugInfo()
     {
-        return array (  122 => 64,  120 => 57,  115 => 53,  106 => 50,  102 => 49,  98 => 48,  91 => 46,  87 => 45,  84 => 44,  80 => 43,  67 => 32,  58 => 22,  52 => 21,  42 => 13,  39 => 12,  32 => 4,  29 => 3,  11 => 1,);
+        return array (  152 => 70,  150 => 63,  145 => 59,  136 => 56,  132 => 55,  127 => 54,  121 => 53,  115 => 52,  109 => 50,  106 => 49,  101 => 48,  97 => 47,  91 => 46,  87 => 45,  84 => 44,  80 => 43,  67 => 32,  58 => 22,  52 => 21,  42 => 13,  39 => 12,  32 => 4,  29 => 3,  11 => 1,);
     }
 }
 /* {% extends "ISETKBundle:Template:Template.html.twig" %}*/
@@ -187,12 +217,18 @@ class __TwigTemplate_ed69a9b01308a6ed64607241502dc580929b6a9c222349a225503e497ac
 /*                                         <TH> NOTE DS </TH>*/
 /*                                         <TH> NOTE EXAM </TH>*/
 /*                                     </TR> */
-/*                                     */
+/*                                                                   */
 /*                                     {% for n in notes %}*/
 /*                                     <TR> */
 /*                                         <TD> {{ n.Eseignant.Matiere.nom }} </TD> */
 /*                                         <TD> {{ n.Eseignant.prenom }} {{ n.Eseignant.nom }} </TD> */
-/*                                         <TD> 5 </TD> */
+/*                                         {% for m in n.Eseignant.Matiere.Coefficient %}*/
+/*                                         {% for c in Coef %}*/
+/*                                             {% if c.id == m.id %}*/
+/*                                                 <TD> {{ c.coef }} </TD>*/
+/*                                             {% endif %}*/
+/*                                         {% endfor %}*/
+/*                                         {% endfor %}*/
 /*                                         <TD> {{ n.TP }} </TD> */
 /*                                         <TD> {{ n.DS }} </TD> */
 /*                                         <TD> {{ n.Exam }} </TD> */

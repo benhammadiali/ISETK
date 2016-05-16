@@ -61,11 +61,22 @@ class EtudiantController extends Controller
         $Notes = array();
         
         $em=$this->container->get('doctrine')->getEntityManager();
-        $query = $em->createQuery( 'SELECT A FROM ISETKBundle:Note A WHERE A.Etudiant =:user')
+        $query = $em->createQuery( 'SELECT A ,e, m, c FROM ISETKBundle:Note A JOIN A.Eseignant e JOIN e.Matiere m JOIN m.Coefficient c Where A.Etudiant =:user')
                             ->setParameter('user',$user);
-                            
+//                            SELECT A , c.coef FROM ISETKBundle:Note A, ISETKBundle:Coefficient c JOIN c.Matiere m JOIN m.Enseignant u WHERE A.Eseignant = u AND A.Etudiant =:user
+//                            SELECT A FROM ISETKBundle:Note A WHERE A.Etudiant =:user
         $Notes=$query->getResult();
         
-        return $this->render('ISETKBundle:Etudiant:Resultat.html.twig', array('user' => $user, 'notes'=>$Notes));
+//        $Coef = array();
+         $em = $this->container->get('doctrine')->getEntityManager();
+//        $query = $em->createQuery( 'SELECT c FROM ISETKBundle:Coefficient c')
+//                            ->setParameter('user',$user->getClasse());
+//                            SELECT A , c.coef FROM ISETKBundle:Note A, ISETKBundle:Coefficient c JOIN c.Matiere m JOIN m.Enseignant u WHERE A.Eseignant = u AND A.Etudiant =:user
+//                            SELECT A FROM ISETKBundle:Note A WHERE A.Etudiant =:user
+        $Coef= $em->getRepository('ISETKBundle:Coefficient')->FindAll();
+        
+        
+        
+        return $this->render('ISETKBundle:Etudiant:Resultat.html.twig', array('user' => $user, 'notes'=>$Notes, 'Coef'=>$Coef));
     }
 }
