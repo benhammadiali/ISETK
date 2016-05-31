@@ -36,7 +36,7 @@ class Matiere extends \ISETKBundle\Entity\Matiere implements \Doctrine\ORM\Proxy
      *
      * @see \Doctrine\Common\Persistence\Proxy::__getLazyProperties
      */
-    public static $lazyPropertiesDefaults = array();
+    public static $lazyPropertiesDefaults = [];
 
 
 
@@ -64,10 +64,10 @@ class Matiere extends \ISETKBundle\Entity\Matiere implements \Doctrine\ORM\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'id', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'nom', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'Classe', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'Coefficient', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'Enseignant');
+            return ['__isInitialized__', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'id', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'nom', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'Classe', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'Coefficient', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'Enseignant'];
         }
 
-        return array('__isInitialized__', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'id', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'nom', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'Classe', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'Coefficient', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'Enseignant');
+        return ['__isInitialized__', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'id', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'nom', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'Classe', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'Coefficient', '' . "\0" . 'ISETKBundle\\Entity\\Matiere' . "\0" . 'Enseignant'];
     }
 
     /**
@@ -97,7 +97,7 @@ class Matiere extends \ISETKBundle\Entity\Matiere implements \Doctrine\ORM\Proxy
      */
     public function __clone()
     {
-        $this->__cloner__ && $this->__cloner__->__invoke($this, '__clone', array());
+        $this->__cloner__ && $this->__cloner__->__invoke($this, '__clone', []);
     }
 
     /**
@@ -105,7 +105,7 @@ class Matiere extends \ISETKBundle\Entity\Matiere implements \Doctrine\ORM\Proxy
      */
     public function __load()
     {
-        $this->__initializer__ && $this->__initializer__->__invoke($this, '__load', array());
+        $this->__initializer__ && $this->__initializer__->__invoke($this, '__load', []);
     }
 
     /**
@@ -183,7 +183,7 @@ class Matiere extends \ISETKBundle\Entity\Matiere implements \Doctrine\ORM\Proxy
         }
 
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', array());
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', []);
 
         return parent::getId();
     }
@@ -194,7 +194,7 @@ class Matiere extends \ISETKBundle\Entity\Matiere implements \Doctrine\ORM\Proxy
     public function setNom($nom)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNom', array($nom));
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNom', [$nom]);
 
         return parent::setNom($nom);
     }
@@ -205,7 +205,7 @@ class Matiere extends \ISETKBundle\Entity\Matiere implements \Doctrine\ORM\Proxy
     public function getNom()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNom', array());
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNom', []);
 
         return parent::getNom();
     }
@@ -216,7 +216,7 @@ class Matiere extends \ISETKBundle\Entity\Matiere implements \Doctrine\ORM\Proxy
     public function getClasse()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getClasse', array());
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getClasse', []);
 
         return parent::getClasse();
     }
@@ -227,7 +227,7 @@ class Matiere extends \ISETKBundle\Entity\Matiere implements \Doctrine\ORM\Proxy
     public function getCoefficient()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCoefficient', array());
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCoefficient', []);
 
         return parent::getCoefficient();
     }
@@ -238,7 +238,7 @@ class Matiere extends \ISETKBundle\Entity\Matiere implements \Doctrine\ORM\Proxy
     public function setClasse($Classe)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setClasse', array($Classe));
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setClasse', [$Classe]);
 
         return parent::setClasse($Classe);
     }
@@ -249,7 +249,7 @@ class Matiere extends \ISETKBundle\Entity\Matiere implements \Doctrine\ORM\Proxy
     public function setCoefficient($Coefficient)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCoefficient', array($Coefficient));
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCoefficient', [$Coefficient]);
 
         return parent::setCoefficient($Coefficient);
     }
@@ -260,7 +260,7 @@ class Matiere extends \ISETKBundle\Entity\Matiere implements \Doctrine\ORM\Proxy
     public function getEnseignant()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEnseignant', array());
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEnseignant', []);
 
         return parent::getEnseignant();
     }
@@ -271,7 +271,7 @@ class Matiere extends \ISETKBundle\Entity\Matiere implements \Doctrine\ORM\Proxy
     public function setEnseignant($Enseignant)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEnseignant', array($Enseignant));
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEnseignant', [$Enseignant]);
 
         return parent::setEnseignant($Enseignant);
     }

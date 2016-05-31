@@ -1,0 +1,85 @@
+{% extends "ISETKBundle:Template:Template.html.twig" %}
+
+{% block titre %}
+
+    <title>Liste Etudiant</title>
+
+{% endblock %}
+
+
+
+
+{% block main %}
+
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-center">Liste Enseignant</h1>
+                    <div class="separator"></div>
+                    <p class="text-center"></p>
+                    <p class="text-center"></p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            {#<div class="icon-box">
+                                <i class="fa fa-cloud-upload object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="0"></i>
+                                <h2>Upload Enseignant</h2>
+                                <p>Version actuelle : Emploi du temps pour la 1er semestre 2016.</p>
+                            </div>#}
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="icon-box">
+                                      
+                                    <table class="table table-hover">
+                                        <TR> 
+                                            <TH> Nom </TH> 
+                                            <TH> Prenom </TH> 
+                                            <TH> UserName </TH>
+                                            <TH> Matiere </TH>
+                                            <TH> Edite </TH>
+
+                                        </TR> 
+
+                                        {% for e in etudiant %}
+{#                                            <form action="{{ path('isetk_doNoteChef') }}">#}
+                                            <TR> 
+                                                <TD> {{ e.nom }} </TD> 
+                                                <TD> {{ e.prenom }}  </TD>
+                                                <TD> {{ e.username }} </TD>
+
+                                                <TD>
+
+
+                                                 {{ e.Matiere.nom }}
+
+
+                                                </TD>
+                                                <TD>  </TD> 
+                                            </TR> 
+{#                                            </form>#}
+                                        {% endfor %}
+
+                                    </table>
+
+                                
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            {# <div class="icon-box">
+                                 <i class="fa fa-cloud-upload object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="400"></i>
+                                 <h2>Upload Etudiant</h2>
+                                 <p>Version actuelle : Emploi du temps pour la 1er semestre 2016.</p>
+                             </div>#}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock %}
+

@@ -108,4 +108,12 @@ class Matiere
         $this->Classe = new ArrayCollection();
     }
 
+    /*public function addEnseignant(User $Enseignant)
+    {
+        $this->Enseignant[] = $Enseignant;
+
+        return $this;
+    }*/
+
+
 }

@@ -5,6 +5,16 @@ isetk_homepage:
 isetk_home:
     path:     /
     defaults: { _controller: ISETKBundle:Default:index }
+    
+isetk_msg:
+    path:     /msg/{id}
+    defaults: { _controller: ISETKBundle:Default:msg }
+    
+isetk_room:
+    path:     /room
+    defaults: { _controller: ISETKBundle:Default:room }
+    
+
 # --------------- Chef ----------------------------
 isetk_homeChef:
     path:     /Chef
@@ -33,8 +43,18 @@ isetk_NoteChef:
 isetk_doNoteChef:
     path:     /Chef/NoteT
     defaults: { _controller: ISETKBundle:Chef:doNote }
+    
+isetk_ListeEtudiantChef:
+    path:     /Chef/Compte/ListeEtudiant
+    defaults: { _controller: ISETKBundle:Chef:ListeEtudiant }
 
+isetk_ListeEnseignantChef:
+    path:     /Chef/Compte/ListeEnseignant
+    defaults: { _controller: ISETKBundle:Chef:ListeEnseignant }
 
+fos_user_registration_register:
+    path:      /chef/Compte/register/{attr}
+    defaults:  { _controller: FOSUserBundle:Registration:register }
 # --------------- Enseignant ----------------------------    
 isetk_homeEnseignant:
     path:     /Enseignant

@@ -22,7 +22,7 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="icon-box">
-                                <i class="fa fa-user object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="0"></i>
+                                <a href="{{ path('isetk_ListeEnseignantChef') }}" ><i class="fa fa-user object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="0"></i></a>
                                 <h2>Liste Enseignant</h2>
                                 <p></p>
                             </div>
@@ -30,14 +30,14 @@
                         <div class="col-sm-4">
                             <div class="icon-box">
 {#                                {{ path('fos_user_register') }}#}
-                                <a href="#" ><i class="fa fa-user-plus object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200"></i></a>
+                                <a href="{{ path('fos_user_registration_register') }}" ><i class="fa fa-user-plus object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200"></i></a>
                                 <h2>Ajouter un compte</h2>
                                 <p></p>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="icon-box">
-                                <i class="fa fa-users object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="400"></i>
+                                <a href="{{ path('isetk_ListeEtudiantChef') }}" ><i class="fa fa-users object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="400"></i></a>
                                 <h2>Liste Etudiant</h2>
                                 <p></p>
                             </div>

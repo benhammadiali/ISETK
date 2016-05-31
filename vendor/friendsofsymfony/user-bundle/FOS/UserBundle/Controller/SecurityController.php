@@ -41,7 +41,7 @@ class SecurityController extends ContainerAware
         $lastUsername = (null === $session) ? '' : $session->get(SecurityContext::LAST_USERNAME);
 
         $csrfToken = $this->container->get('form.csrf_provider')->generateCsrfToken('authenticate');
-
+        
         return $this->renderLogin(array(
             'last_username' => $lastUsername,
             'error'         => $error,

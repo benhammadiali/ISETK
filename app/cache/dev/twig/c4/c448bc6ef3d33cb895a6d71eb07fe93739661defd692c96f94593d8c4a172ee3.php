@@ -51,7 +51,10 @@ class __TwigTemplate_b897b3be062d7aa8cd83bb78710c80fdece198e7748349d62f330e03e3f
                     <div class=\"row\">
                         <div class=\"col-sm-4\">
                             <div class=\"icon-box\">
-                                <i class=\"fa fa-user object-non-visible\" data-animation-effect=\"fadeInUpSmall\" data-effect-delay=\"0\"></i>
+                                <a href=\"";
+        // line 25
+        echo $this->env->getExtension('routing')->getPath("isetk_ListeEnseignantChef");
+        echo "\" ><i class=\"fa fa-user object-non-visible\" data-animation-effect=\"fadeInUpSmall\" data-effect-delay=\"0\"></i></a>
                                 <h2>Liste Enseignant</h2>
                                 <p></p>
                             </div>
@@ -60,14 +63,19 @@ class __TwigTemplate_b897b3be062d7aa8cd83bb78710c80fdece198e7748349d62f330e03e3f
                             <div class=\"icon-box\">
 ";
         // line 33
-        echo "                                <a href=\"#\" ><i class=\"fa fa-user-plus object-non-visible\" data-animation-effect=\"fadeInUpSmall\" data-effect-delay=\"200\"></i></a>
+        echo "                                <a href=\"";
+        echo $this->env->getExtension('routing')->getPath("fos_user_registration_register");
+        echo "\" ><i class=\"fa fa-user-plus object-non-visible\" data-animation-effect=\"fadeInUpSmall\" data-effect-delay=\"200\"></i></a>
                                 <h2>Ajouter un compte</h2>
                                 <p></p>
                             </div>
                         </div>
                         <div class=\"col-sm-4\">
                             <div class=\"icon-box\">
-                                <i class=\"fa fa-users object-non-visible\" data-animation-effect=\"fadeInUpSmall\" data-effect-delay=\"400\"></i>
+                                <a href=\"";
+        // line 40
+        echo $this->env->getExtension('routing')->getPath("isetk_ListeEtudiantChef");
+        echo "\" ><i class=\"fa fa-users object-non-visible\" data-animation-effect=\"fadeInUpSmall\" data-effect-delay=\"400\"></i></a>
                                 <h2>Liste Etudiant</h2>
                                 <p></p>
                             </div>
@@ -96,7 +104,7 @@ class __TwigTemplate_b897b3be062d7aa8cd83bb78710c80fdece198e7748349d62f330e03e3f
 
     public function getDebugInfo()
     {
-        return array (  63 => 33,  42 => 13,  39 => 12,  32 => 4,  29 => 3,  11 => 1,);
+        return array (  77 => 40,  66 => 33,  56 => 25,  42 => 13,  39 => 12,  32 => 4,  29 => 3,  11 => 1,);
     }
 }
 /* {% extends "ISETKBundle:Template:Template.html.twig" %}*/
@@ -123,7 +131,7 @@ class __TwigTemplate_b897b3be062d7aa8cd83bb78710c80fdece198e7748349d62f330e03e3f
 /*                     <div class="row">*/
 /*                         <div class="col-sm-4">*/
 /*                             <div class="icon-box">*/
-/*                                 <i class="fa fa-user object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="0"></i>*/
+/*                                 <a href="{{ path('isetk_ListeEnseignantChef') }}" ><i class="fa fa-user object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="0"></i></a>*/
 /*                                 <h2>Liste Enseignant</h2>*/
 /*                                 <p></p>*/
 /*                             </div>*/
@@ -131,14 +139,14 @@ class __TwigTemplate_b897b3be062d7aa8cd83bb78710c80fdece198e7748349d62f330e03e3f
 /*                         <div class="col-sm-4">*/
 /*                             <div class="icon-box">*/
 /* {#                                {{ path('fos_user_register') }}#}*/
-/*                                 <a href="#" ><i class="fa fa-user-plus object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200"></i></a>*/
+/*                                 <a href="{{ path('fos_user_registration_register') }}" ><i class="fa fa-user-plus object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200"></i></a>*/
 /*                                 <h2>Ajouter un compte</h2>*/
 /*                                 <p></p>*/
 /*                             </div>*/
 /*                         </div>*/
 /*                         <div class="col-sm-4">*/
 /*                             <div class="icon-box">*/
-/*                                 <i class="fa fa-users object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="400"></i>*/
+/*                                 <a href="{{ path('isetk_ListeEtudiantChef') }}" ><i class="fa fa-users object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="400"></i></a>*/
 /*                                 <h2>Liste Etudiant</h2>*/
 /*                                 <p></p>*/
 /*                             </div>*/

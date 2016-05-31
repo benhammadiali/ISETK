@@ -36,7 +36,7 @@ class Classe extends \ISETKBundle\Entity\Classe implements \Doctrine\ORM\Proxy\P
      *
      * @see \Doctrine\Common\Persistence\Proxy::__getLazyProperties
      */
-    public static $lazyPropertiesDefaults = array();
+    public static $lazyPropertiesDefaults = [];
 
 
 
@@ -64,10 +64,10 @@ class Classe extends \ISETKBundle\Entity\Classe implements \Doctrine\ORM\Proxy\P
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return array('__isInitialized__', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'id', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'niveau', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'filiere', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'classes', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'emploi', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'Matiere');
+            return ['__isInitialized__', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'id', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'niveau', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'filiere', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'classes', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'emploi', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'Matiere'];
         }
 
-        return array('__isInitialized__', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'id', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'niveau', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'filiere', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'classes', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'emploi', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'Matiere');
+        return ['__isInitialized__', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'id', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'niveau', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'filiere', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'classes', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'emploi', '' . "\0" . 'ISETKBundle\\Entity\\Classe' . "\0" . 'Matiere'];
     }
 
     /**
@@ -97,7 +97,7 @@ class Classe extends \ISETKBundle\Entity\Classe implements \Doctrine\ORM\Proxy\P
      */
     public function __clone()
     {
-        $this->__cloner__ && $this->__cloner__->__invoke($this, '__clone', array());
+        $this->__cloner__ && $this->__cloner__->__invoke($this, '__clone', []);
     }
 
     /**
@@ -105,7 +105,7 @@ class Classe extends \ISETKBundle\Entity\Classe implements \Doctrine\ORM\Proxy\P
      */
     public function __load()
     {
-        $this->__initializer__ && $this->__initializer__->__invoke($this, '__load', array());
+        $this->__initializer__ && $this->__initializer__->__invoke($this, '__load', []);
     }
 
     /**
@@ -183,7 +183,7 @@ class Classe extends \ISETKBundle\Entity\Classe implements \Doctrine\ORM\Proxy\P
         }
 
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', array());
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', []);
 
         return parent::getId();
     }
@@ -194,7 +194,7 @@ class Classe extends \ISETKBundle\Entity\Classe implements \Doctrine\ORM\Proxy\P
     public function setNiveau($niveau)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNiveau', array($niveau));
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNiveau', [$niveau]);
 
         return parent::setNiveau($niveau);
     }
@@ -205,7 +205,7 @@ class Classe extends \ISETKBundle\Entity\Classe implements \Doctrine\ORM\Proxy\P
     public function getNiveau()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNiveau', array());
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNiveau', []);
 
         return parent::getNiveau();
     }
@@ -216,7 +216,7 @@ class Classe extends \ISETKBundle\Entity\Classe implements \Doctrine\ORM\Proxy\P
     public function setFiliere($filiere)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFiliere', array($filiere));
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setFiliere', [$filiere]);
 
         return parent::setFiliere($filiere);
     }
@@ -227,7 +227,7 @@ class Classe extends \ISETKBundle\Entity\Classe implements \Doctrine\ORM\Proxy\P
     public function getFiliere()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFiliere', array());
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFiliere', []);
 
         return parent::getFiliere();
     }
@@ -238,7 +238,7 @@ class Classe extends \ISETKBundle\Entity\Classe implements \Doctrine\ORM\Proxy\P
     public function setClasses($classes)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setClasses', array($classes));
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setClasses', [$classes]);
 
         return parent::setClasses($classes);
     }
@@ -249,7 +249,7 @@ class Classe extends \ISETKBundle\Entity\Classe implements \Doctrine\ORM\Proxy\P
     public function getClasses()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getClasses', array());
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getClasses', []);
 
         return parent::getClasses();
     }
@@ -260,7 +260,7 @@ class Classe extends \ISETKBundle\Entity\Classe implements \Doctrine\ORM\Proxy\P
     public function getEmploi()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEmploi', array());
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEmploi', []);
 
         return parent::getEmploi();
     }
@@ -271,7 +271,7 @@ class Classe extends \ISETKBundle\Entity\Classe implements \Doctrine\ORM\Proxy\P
     public function setEmploi($emploi)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEmploi', array($emploi));
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEmploi', [$emploi]);
 
         return parent::setEmploi($emploi);
     }
@@ -282,7 +282,7 @@ class Classe extends \ISETKBundle\Entity\Classe implements \Doctrine\ORM\Proxy\P
     public function getMatiere()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getMatiere', array());
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getMatiere', []);
 
         return parent::getMatiere();
     }
@@ -293,7 +293,7 @@ class Classe extends \ISETKBundle\Entity\Classe implements \Doctrine\ORM\Proxy\P
     public function setMatiere($Matiere)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setMatiere', array($Matiere));
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setMatiere', [$Matiere]);
 
         return parent::setMatiere($Matiere);
     }

@@ -172,5 +172,33 @@ class ChefController extends Controller
         return new RedirectResponse($this->generateUrl('isetk_NoteEnseignant'));
 //        $this->redirect('http://symfony.com/doc');
     }
+    
+    public function listeEtudiantAction(){
+        
+        $Etudiant = array();
+
+
+        $em = $this->container->get('doctrine')->getEntityManager();
+        $query = $em->createQuery('SELECT c FROM UserBundle:User c WHERE c.roles LIKE :e')
+                ->setParameter('e', '%{}%');
+
+        $Etudiant = $query->getResult();
+        
+        return $this->render('ISETKBundle:Chef:ListEtudiant.html.twig', array('etudiant' => $Etudiant));
+    }
+
+    public function ListeEnseignantAction(){
+
+        $Etudiant = array();
+
+
+        $em = $this->container->get('doctrine')->getEntityManager();
+        $query = $em->createQuery('SELECT c FROM UserBundle:User c WHERE c.roles LIKE :e')
+            ->setParameter('e', '%ROLE_ENSEIGNANT%');
+
+        $Etudiant = $query->getResult();
+
+        return $this->render('ISETKBundle:Chef:ListEnseignant.html.twig', array('etudiant' => $Etudiant));
+    }
 
 }

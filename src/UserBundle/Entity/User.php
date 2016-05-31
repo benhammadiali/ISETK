@@ -37,15 +37,29 @@ class User extends BaseUser
     /**
      * @var string
      *
-     * @ORM\Column(name="emploi", type="string", length=255)
+     * @ORM\Column(name="emploi", type="string", length=255, nullable=true)
      */
     private $emploi;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="statut", type="string", length=255, nullable=true)
+     */
+    private $statut;
+    
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="session", type="string", length=255, nullable=true)
+     */
+    private $session;
     
     /**
     * @ORM\ManyToOne(targetEntity="ISETKBundle\Entity\Classe")
     */
    private $Classe;
-   
+
    /**
     * @ORM\ManyToOne(targetEntity="ISETKBundle\Entity\Matiere", inversedBy="Enseignant")
     */
@@ -54,7 +68,7 @@ class User extends BaseUser
     public function __construct()
     {
         parent::__construct();
-        $this->Matiere = new ArrayCollection();
+        //$this->Matiere = new ArrayCollection();
     }
     
     public function getParent()
@@ -111,6 +125,37 @@ class User extends BaseUser
  function setMatiere($Matiere) {
      $this->Matiere = $Matiere;
  }
+
+ function getStatut() {
+     return $this->statut;
+ }
+
+ function setStatut($statut) {
+     $this->statut = $statut;
+ }
+
+ function getSession() {
+     return $this->session;
+ }
+
+ function setSession($session) {
+     $this->session = $session;
+ }
+
+    public function addMatiere(Matiere $Matiere)
+    {
+        $this->Matiere[] = $Matiere;
+
+        return $this;
+    }
+
+    public function removeMatiere(Matiere $Matiere)
+    {
+        $this->Matiere->removeElement($Matiere);
+
+        // Et si notre relation était facultative (nullable=true, ce qui n'est pas notre cas ici attention) :
+        // $application->setAdvert(null);
+    }
 
 
 

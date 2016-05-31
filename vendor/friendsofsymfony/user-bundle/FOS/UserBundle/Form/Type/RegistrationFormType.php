@@ -30,6 +30,8 @@ class RegistrationFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+            ->add('nom')
+            ->add('prenom')
             ->add('username', null, array('label' => 'form.username', 'translation_domain' => 'FOSUserBundle'))
             ->add('email', 'email', array('label' => 'form.email', 'translation_domain' => 'FOSUserBundle'))
             ->add('plainPassword', 'repeated', array(
@@ -44,10 +46,11 @@ class RegistrationFormType extends AbstractType
                     'label' => 'Rôles',
                     'options' => array(
                         'label' => false,
-                        'choices' => array('ROLE_CHEF' => 'Chef de departement', 'ROLE_ENSEIGNANT' => 'Enseignant', 'ROLE_ETUDIANT' => 'Etudiant'),
+                        'choices' => array('ROLE_ENSEIGNANT' => 'Enseignant', 'ROLE_ETUDIANT' => 'Etudiant'),
                         'multiple' => false,
                         'data' => 1
-                    ),));
+                    ),))
+            
         ;
     }
 

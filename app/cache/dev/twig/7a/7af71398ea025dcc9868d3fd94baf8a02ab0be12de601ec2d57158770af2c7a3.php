@@ -45,7 +45,7 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     
                         <ul class=\"nav navbar-nav navbar-main-menu\">
-                            <li class=\"dropdown active\">
+                            <li class=\"dropdown\">
                                 <a href=\"index-2.html\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Accueil</a>
                             </li>
                             <li class=\"dropdown\">
@@ -70,7 +70,7 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
             echo "\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Resultat Exam</a>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Cours</a>
+                                <a href=\"https://isetk.moodlecloud.com\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Cours</a>
                             </li>
                             <li class=\"dropdown\">
                                 <a href=\"";
@@ -86,7 +86,7 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
             echo "                           
                         
                         <ul class=\"nav navbar-nav navbar-main-menu\">
-                            <li class=\"dropdown active\">
+                            <li class=\"dropdown\">
                                 <a href=\"";
             // line 55
             echo $this->env->getExtension('routing')->getPath("isetk_homeEnseignant");
@@ -114,7 +114,7 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
             echo "\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Resultat Exam</a>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Cours</a>
+                                <a href=\"https://isetk.moodlecloud.com\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Cours</a>
                             </li>
                         </ul>
                         
@@ -125,42 +125,39 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
             echo "
                         
                         <ul class=\"nav navbar-nav navbar-main-menu\">
-                            <li class=\"dropdown active\">
+                            <li class=\"dropdown\">
                                 <a href=\"";
             // line 80
             echo $this->env->getExtension('routing')->getPath("isetk_homeEtudiant");
             echo "\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Accueil</a>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"page-about.html\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Profil</a>
-                            </li>
-                            <li class=\"dropdown\">
                                 <a href=\"";
-            // line 86
+            // line 83
             echo $this->env->getExtension('routing')->getPath("isetk_EmploiEtudiant");
             echo "\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Emploi du temps</a>
                             </li>
                             <li class=\"dropdown\">
                                 <a href=\"";
-            // line 89
+            // line 86
             echo $this->env->getExtension('routing')->getPath("isetk_AbsenceEtudiant");
             echo "\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Absence</a>
                             </li>
                             <li class=\"dropdown\">
                                 <a href=\"";
-            // line 92
+            // line 89
             echo $this->env->getExtension('routing')->getPath("isetk_ResultatEtudiant");
             echo "\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Resultat</a>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Cours</a>
+                                <a href=\"https://isetk.moodlecloud.com\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Cours</a>
                             </li>
                         </ul>    
                             
                             
                         ";
         }
-        // line 101
+        // line 98
         echo "                        
                         
                         <ul class=\"nav navbar-nav navbar-right navbar-symbols\">
@@ -180,28 +177,28 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
                             <li class=\"dropdown\">
                                 
                                 ";
-        // line 119
+        // line 116
         if ($this->env->getExtension('security')->isGranted("IS_AUTHENTICATED_REMEMBERED")) {
-            // line 120
+            // line 117
             echo "                                    Hello ,";
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["app"]) ? $context["app"] : $this->getContext($context, "app")), "user", array()), "username", array()), "html", null, true);
-            // line 121
+            // line 118
             echo "                                    <a href=\"";
             echo $this->env->getExtension('routing')->getPath("fos_user_security_logout");
             echo "\" ><i class=\"fa fa-lock\"></i></a>
                                     
                                 ";
         } else {
-            // line 124
+            // line 121
             echo "                                    <a href=\"";
             echo $this->env->getExtension('routing')->getPath("fos_user_security_login");
             echo "\" ><i class=\"fa fa-lock\"></i></a>
                                 ";
         }
-        // line 126
+        // line 123
         echo "                                    
                                 ";
-        // line 150
+        // line 147
         echo "                            </li>
                         </ul>
                     </div>
@@ -227,7 +224,7 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
 
     public function getDebugInfo()
     {
-        return array (  205 => 150,  202 => 126,  196 => 124,  189 => 121,  186 => 120,  184 => 119,  164 => 101,  152 => 92,  146 => 89,  140 => 86,  131 => 80,  125 => 76,  113 => 67,  107 => 64,  101 => 61,  92 => 55,  86 => 51,  78 => 46,  69 => 40,  63 => 37,  57 => 34,  42 => 22,  19 => 1,);
+        return array (  202 => 147,  199 => 123,  193 => 121,  186 => 118,  183 => 117,  181 => 116,  161 => 98,  149 => 89,  143 => 86,  137 => 83,  131 => 80,  125 => 76,  113 => 67,  107 => 64,  101 => 61,  92 => 55,  86 => 51,  78 => 46,  69 => 40,  63 => 37,  57 => 34,  42 => 22,  19 => 1,);
     }
 }
 /* <div class="main-navigation fixed">*/
@@ -256,7 +253,7 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
 /*                     <!-- Collect the nav links, forms, and other content for toggling -->*/
 /*                     */
 /*                         <ul class="nav navbar-nav navbar-main-menu">*/
-/*                             <li class="dropdown active">*/
+/*                             <li class="dropdown">*/
 /*                                 <a href="index-2.html" class="dropdown-toggle" data-toggle="dropdown">Accueil</a>*/
 /*                             </li>*/
 /*                             <li class="dropdown">*/
@@ -272,7 +269,7 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
 /*                                 <a href="{{ path('isetk_NoteChef') }}" class="dropdown-toggle" data-toggle="dropdown">Resultat Exam</a>*/
 /*                             </li>*/
 /*                             <li class="dropdown">*/
-/*                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours</a>*/
+/*                                 <a href="https://isetk.moodlecloud.com" class="dropdown-toggle" data-toggle="dropdown">Cours</a>*/
 /*                             </li>*/
 /*                             <li class="dropdown">*/
 /*                                 <a href="{{ path('isetk_CompteChef') }}" class="dropdown-toggle" data-toggle="dropdown">Compte</a>*/
@@ -283,7 +280,7 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
 /*                            */
 /*                         */
 /*                         <ul class="nav navbar-nav navbar-main-menu">*/
-/*                             <li class="dropdown active">*/
+/*                             <li class="dropdown">*/
 /*                                 <a href="{{ path('isetk_homeEnseignant') }}" class="dropdown-toggle" data-toggle="dropdown">Accueil</a>*/
 /*                             </li>*/
 /*                             <li class="dropdown">*/
@@ -299,7 +296,7 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
 /*                                 <a href="{{ path('isetk_NoteEnseignant') }}" class="dropdown-toggle" data-toggle="dropdown">Resultat Exam</a>*/
 /*                             </li>*/
 /*                             <li class="dropdown">*/
-/*                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours</a>*/
+/*                                 <a href="https://isetk.moodlecloud.com" class="dropdown-toggle" data-toggle="dropdown">Cours</a>*/
 /*                             </li>*/
 /*                         </ul>*/
 /*                         */
@@ -308,11 +305,8 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
 /* */
 /*                         */
 /*                         <ul class="nav navbar-nav navbar-main-menu">*/
-/*                             <li class="dropdown active">*/
-/*                                 <a href="{{ path('isetk_homeEtudiant') }}" class="dropdown-toggle" data-toggle="dropdown">Accueil</a>*/
-/*                             </li>*/
 /*                             <li class="dropdown">*/
-/*                                 <a href="page-about.html" class="dropdown-toggle" data-toggle="dropdown">Profil</a>*/
+/*                                 <a href="{{ path('isetk_homeEtudiant') }}" class="dropdown-toggle" data-toggle="dropdown">Accueil</a>*/
 /*                             </li>*/
 /*                             <li class="dropdown">*/
 /*                                 <a href="{{ path('isetk_EmploiEtudiant') }}" class="dropdown-toggle" data-toggle="dropdown">Emploi du temps</a>*/
@@ -324,7 +318,7 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
 /*                                 <a href="{{ path('isetk_ResultatEtudiant') }}" class="dropdown-toggle" data-toggle="dropdown">Resultat</a>*/
 /*                             </li>*/
 /*                             <li class="dropdown">*/
-/*                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cours</a>*/
+/*                                 <a href="https://isetk.moodlecloud.com" class="dropdown-toggle" data-toggle="dropdown">Cours</a>*/
 /*                             </li>*/
 /*                         </ul>    */
 /*                             */
