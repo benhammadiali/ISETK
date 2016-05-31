@@ -55,6 +55,10 @@ isetk_ListeEnseignantChef:
 fos_user_registration_register:
     path:      /chef/Compte/register/{attr}
     defaults:  { _controller: FOSUserBundle:Registration:register }
+
+isetk_profilChef:
+    path:      /chef/profil
+    defaults:  { _controller: ISETKBundle:Chef:profil }
 # --------------- Enseignant ----------------------------    
 isetk_homeEnseignant:
     path:     /Enseignant
@@ -79,6 +83,10 @@ isetk_NoteEnseignant:
 isetk_doNoteEnseignant:
     path:     /Enseignant/NoteT
     defaults: { _controller: ISETKBundle:Enseignant:doNote }
+
+isetk_profilEnseignant:
+    path:      /Enseignant/profil
+    defaults:  { _controller: ISETKBundle:Enseignant:profil }
 # --------------- Etudiant ----------------------------     
 isetk_homeEtudiant:
     path:     /Etudiant

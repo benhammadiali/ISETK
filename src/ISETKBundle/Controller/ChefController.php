@@ -20,6 +20,11 @@ class ChefController extends Controller
     {
         return $this->render('ISETKBundle:Chef:Compte.html.twig', array());
     }
+
+    public function profilAction()
+    {
+        return $this->render('ISETKBundle:Chef:Profil.html.twig', array());
+    }
     
     public function absenceAction() {
         $user = new \UserBundle\Entity\User();

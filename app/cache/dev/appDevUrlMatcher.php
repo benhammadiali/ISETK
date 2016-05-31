@@ -208,6 +208,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // isetk_profilChef
+        if ($pathinfo === '/chef/profil') {
+            return array (  '_controller' => 'ISETKBundle\\Controller\\ChefController::profilAction',  '_route' => 'isetk_profilChef',);
+        }
+
         if (0 === strpos($pathinfo, '/E')) {
             if (0 === strpos($pathinfo, '/Enseignant')) {
                 // isetk_homeEnseignant
@@ -244,6 +249,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                         return array (  '_controller' => 'ISETKBundle\\Controller\\EnseignantController::doNoteAction',  '_route' => 'isetk_doNoteEnseignant',);
                     }
 
+                }
+
+                // isetk_profilEnseignant
+                if ($pathinfo === '/Enseignant/profil') {
+                    return array (  '_controller' => 'ISETKBundle\\Controller\\EnseignantController::profilAction',  '_route' => 'isetk_profilEnseignant',);
                 }
 
             }

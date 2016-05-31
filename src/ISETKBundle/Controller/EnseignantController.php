@@ -11,6 +11,11 @@ class EnseignantController extends Controller {
         return $this->render('ISETKBundle:Enseignant:Home.html.twig', array());
     }
 
+    public function profilAction()
+    {
+        return $this->render('ISETKBundle:Enseignant:Profil.html.twig', array());
+    }
+
     public function emploiAction() {
         $user = new \UserBundle\Entity\User();
 

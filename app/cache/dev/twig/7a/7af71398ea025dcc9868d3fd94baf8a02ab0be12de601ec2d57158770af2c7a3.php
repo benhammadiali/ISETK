@@ -49,7 +49,10 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
                                 <a href=\"index-2.html\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Accueil</a>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"page-about.html\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Profil</a>
+                                <a href=\"";
+            // line 31
+            echo $this->env->getExtension('routing')->getPath("isetk_profilChef");
+            echo "\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Profil</a>
                             </li>
                             <li class=\"dropdown\">
                                 <a href=\"";
@@ -93,7 +96,10 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
             echo "\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Accueil</a>
                             </li>
                             <li class=\"dropdown\">
-                                <a href=\"page-about.html\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Profil</a>
+                                <a href=\"";
+            // line 58
+            echo $this->env->getExtension('routing')->getPath("isetk_profilEnseignant");
+            echo "\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Profil</a>
                             </li>
                             <li class=\"dropdown\">
                                 <a href=\"";
@@ -224,7 +230,7 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
 
     public function getDebugInfo()
     {
-        return array (  202 => 147,  199 => 123,  193 => 121,  186 => 118,  183 => 117,  181 => 116,  161 => 98,  149 => 89,  143 => 86,  137 => 83,  131 => 80,  125 => 76,  113 => 67,  107 => 64,  101 => 61,  92 => 55,  86 => 51,  78 => 46,  69 => 40,  63 => 37,  57 => 34,  42 => 22,  19 => 1,);
+        return array (  208 => 147,  205 => 123,  199 => 121,  192 => 118,  189 => 117,  187 => 116,  167 => 98,  155 => 89,  149 => 86,  143 => 83,  137 => 80,  131 => 76,  119 => 67,  113 => 64,  107 => 61,  101 => 58,  95 => 55,  89 => 51,  81 => 46,  72 => 40,  66 => 37,  60 => 34,  54 => 31,  42 => 22,  19 => 1,);
     }
 }
 /* <div class="main-navigation fixed">*/
@@ -257,7 +263,7 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
 /*                                 <a href="index-2.html" class="dropdown-toggle" data-toggle="dropdown">Accueil</a>*/
 /*                             </li>*/
 /*                             <li class="dropdown">*/
-/*                                 <a href="page-about.html" class="dropdown-toggle" data-toggle="dropdown">Profil</a>*/
+/*                                 <a href="{{ path('isetk_profilChef') }}" class="dropdown-toggle" data-toggle="dropdown">Profil</a>*/
 /*                             </li>*/
 /*                             <li class="dropdown">*/
 /*                                 <a href="{{ path('isetk_EmploiChef') }}" class="dropdown-toggle" data-toggle="dropdown">Emploi du temps</a>*/
@@ -284,7 +290,7 @@ class __TwigTemplate_2b6c5edc9ba64b49972717ead6ef6e69ed6146e7ab3eb369e9683a16ed4
 /*                                 <a href="{{ path('isetk_homeEnseignant') }}" class="dropdown-toggle" data-toggle="dropdown">Accueil</a>*/
 /*                             </li>*/
 /*                             <li class="dropdown">*/
-/*                                 <a href="page-about.html" class="dropdown-toggle" data-toggle="dropdown">Profil</a>*/
+/*                                 <a href="{{ path('isetk_profilEnseignant') }}" class="dropdown-toggle" data-toggle="dropdown">Profil</a>*/
 /*                             </li>*/
 /*                             <li class="dropdown">*/
 /*                                 <a href="{{ path('isetk_EmploiEnseignant') }}" class="dropdown-toggle" data-toggle="dropdown">Emploi du temps</a>*/
