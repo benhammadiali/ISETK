@@ -662,3 +662,5 @@ f3031c,127.0.0.1,GET,http://localhost/my-site/UserAplication/web/app_dev.php/_fr
 96c64c,::1,GET,http://localhost/my-site/UserAplication/web/app_dev.php/Enseignant/Absence?cla=2,1464734161,
 f71607,::1,GET,http://localhost/my-site/UserAplication/web/app_dev.php/Enseignant/css/skins/blue.css,1464734162,cda5f0
 cda5f0,::1,GET,http://localhost/my-site/UserAplication/web/app_dev.php/Enseignant/css/skins/blue.css,1464734162,
+de696e,::1,GET,http://localhost/my-site/UserAplication/web/app_dev.php/Enseignant/Absence?cla=2,1464815118,
+134a87,::1,GET,http://localhost/my-site/UserAplication/web/app_dev.php/login,1464815126,

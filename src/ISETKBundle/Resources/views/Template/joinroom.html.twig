@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>msg|room</title>
+        
+        <meta property="og:url"           content="{{asset('http://localhost/my-site/UserAplication/web/app_dev.php/room')}}" />
+        <meta property="og:type"          content="article" />
+        <meta property="og:title"         content="When Great Minds Don’t Think Alike" />
+        <meta property="og:description"   content="How much does culture influence creative thinking?" />
+        <meta property="og:image"         content="{{asset('http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg')}}" />
+    </head>
+    <body>
+        
+        <!-- Placez cette balise dans l'en-tête ou juste avant la balise de fermeture du corps de texte. -->
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'fr'}
+</script>
+
+<!-- Placez cette balise où vous souhaitez faire apparaître le gadget bouton "Partager". -->
+<div class="g-plus" data-action="share"></div>
+
+<br>
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="neotaichisama">Tweet</a>
+<script>
+    !function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+        if(!d.getElementById(id)){
+            js=d.createElement(s);
+            js.id=id;
+            js.src=p+'://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js,fjs);
+        }
+    }
+    (document, 'script', 'twitter-wjs');
+</script>
+<br>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.6&appId=658212697587492";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-share-button" data-href="http://localhost/my-site/UserAplication/web/app_dev.php/room" data-layout="button" data-mobile-iframe="true"></div>
+  
+
+
+<image src="{{asset('http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg')}}">
+
+
+
+
+
+
+        <form action="{{ path('isetk_msg',{'id':0}) }}">
+
+            <input type="submit" value="crée"></form>
+    </form>
+
+    {% for u in connecter %}
+        <form action="{{ path('isetk_msg',{'id':u.session}) }}">
+
+            <input type="submit" value="Join {{ u.prenom }}"></form>
+    </form>
+{% endfor %}
+</body>
+</html>
